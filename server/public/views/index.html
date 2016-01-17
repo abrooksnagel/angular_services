@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Angular Services</title>
+    <link href="assets/styles/styles.css" rel="stylesheet"/>
+    <script src="vendors/angular/angular.min.js"></script>
+    <script src="assets/scripts/client.min.js"></script>
+</head>
+<body ng-controller="MainController">
+   <h1>Our cohort is {{cohortInfo.name}}</h1>
+        <p>Our instructors are {{cohortInfo.instructors[0]+", "
+                                +cohortInfo.instructors[1]+" and "
+                                +cohortInfo.instructors[2]}}.</p>
+        <p>We have {{cohortInfo.desks}} desks in our {{cohortInfo.colors[0]}}-colored classroom.</p>
+        <p>We achieve transcendence {{cohortInfo.transcendence}}.</p>
+
+
+</body>
+</html>
